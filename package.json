@@ -1,0 +1,16 @@
+{
+  "name": "react-pure-component-optimized",
+  "version": "0.1.0",
+  "description": "This is the optimized react pure component interface",
+  "main": "index.js",
+  "repository": "git@github.com:bayazetyan/react-pure-component-optimized.git",
+  "author": "Artash Bayazetyan <bayazetyan@gmail.com>",
+  "keywords": [
+    "react-native",
+    "react",
+    "module",
+    "pureComponent",
+    "optimized"
+  ],
+  "license": "MIT"
+}
