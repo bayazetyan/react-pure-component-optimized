@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { isObject } from './utils';
 
 export default class PureComponent extends Component {
 
@@ -16,7 +17,7 @@ export default class PureComponent extends Component {
 
                 if(!(nextProps[key] instanceof Function)) {
 
-                    if (Object.prototype.toString.call(nextProps[key]) === '[object Object]' || Array.isArray(nextProps[key]) ) {
+                    if (isObject(nextProps[key]) || Array.isArray(nextProps[key]) ) {
 
                         if(nextProps[key] !== this.props[key] && JSON.stringify(nextProps[key]) !== JSON.stringify(this.props[key])) {
                             return true;
